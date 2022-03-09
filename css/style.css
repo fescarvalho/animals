@@ -145,18 +145,18 @@ body {
   background-color: #fb5;
 }
 
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
   content: "⮯";
   margin-left: 10px;
 }
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
   content: "⮭";
 }
 
-.js-accordion dd {
+[data-anime="accordion"] dd {
   display: none;
 }
-.js-accordion dd.ativo {
+[data-anime="accordion"] dd.ativo {
   display: block;
   animation: dropDown 0.3s forwards;
 }
@@ -204,25 +204,42 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
 }
-.js .js-tabcontent section {
+.js [data-tab="content"] section {
   display: none;
 }
 
-.js-tabcontent section.ativo {
-  display: block !important;
-  animation: show 0.6s forwards;
+[data-tab="content"] section.ativo.show-right {
+  animation: show-right 0.6s forwards;
 }
 
-.js-scroll {
+[data-tab="content"] section.ativo.show-down {
+  animation: show-down 0.6s forwards;
+}
+
+[data-tab="content"] section.ativo {
+  display: block !important;
+}
+
+[data-anime="scroll"] {
   opacity: 0;
   transform: translate3d(-60px, 0, 0);
   transition: 0.3s;
 }
-.js-scroll.ativo {
+[data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-@keyframes show {
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
