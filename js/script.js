@@ -12,5 +12,7 @@ import initToolTip from "./modules/toolTip.js";
 initToolTip();
 import initMenuMobile from "./modules/menuMobile.js";
 initMenuMobile();
+import initAnimaNumeros from "./modules/anima-numeros.js";
+initAnimaNumeros();
 /* import outsideClick from "./module/outsideClick.js";
 outsideClick(); */
