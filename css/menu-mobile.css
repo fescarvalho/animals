@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .js [data-menu="mobile"] {
     display: flex;
     background: #222;
@@ -41,7 +41,7 @@
     width: 160px;
     z-index: 200;
     top: 0;
-    padding: 60px 0 20px 0;
+    padding: 60px 0 0px 0;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   }
   .js #menu.active {

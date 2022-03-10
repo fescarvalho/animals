@@ -81,3 +81,10 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (min-width: 400px) {
+  .modal {
+    width: 50px;
+    padding: 20px;
+  }
+}

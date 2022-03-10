@@ -12,7 +12,7 @@ const menuList = document.querySelector('[data-menu="lista"]');
 function hoverMenu(e) {
   menuList.classList.toggle("active");
   menuButton.classList.toggle("active");
-  outsideClick(menuList, "click", () => {
+  outsideClick(menuList, ["click", "touchstart"], () => {
     menuList.classList.remove("active");
     menuButton.classList.remove("active");
   });
