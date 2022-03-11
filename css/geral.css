@@ -197,12 +197,34 @@ body {
   background-color: #fb5;
 }
 
+[data-semana].aberto::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-left: 6px;
+}
+[data-semana]::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-left: 6px;
+}
+
 .copy {
   grid-column: 3/5;
   background: #ffbb55;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 20px;
+  top: -20px;
 }
 
 .copy p {
