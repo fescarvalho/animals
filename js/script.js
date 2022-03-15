@@ -12,9 +12,12 @@ import initToolTip from "./modules/toolTip.js";
 initToolTip();
 import initMenuMobile from "./modules/menuMobile.js";
 initMenuMobile();
-import initAnimaNumeros from "./modules/anima-numeros.js";
-initAnimaNumeros();
+
 import initDataObject from "./modules/dataObject.js";
 initDataObject();
+import initAnimaisFetch from "./modules/animais-fetch.js";
+initAnimaisFetch();
+/* import initScrollImg from "./modules/scrollimg.js";
+initScrollImg(); */
 /* import outsideClick from "./module/outsideClick.js";
 outsideClick(); */
