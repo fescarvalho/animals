@@ -1,6 +1,5 @@
 export default function initFetchBitcoin() {
   const url = "https://blockchain.info/ticker";
-
   fetch(url)
     .then((res) => res.json())
     .then((resJson) => {
