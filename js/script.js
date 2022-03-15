@@ -17,6 +17,8 @@ import initDataObject from "./modules/dataObject.js";
 initDataObject();
 import initAnimaisFetch from "./modules/animais-fetch.js";
 initAnimaisFetch();
+import initFetchBitcoin from "./modules/fetchBitcoin.js";
+initFetchBitcoin();
 /* import initScrollImg from "./modules/scrollimg.js";
 initScrollImg(); */
 /* import outsideClick from "./module/outsideClick.js";
