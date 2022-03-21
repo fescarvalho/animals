@@ -43,6 +43,10 @@ import ScrollAnimation from "./modules/animacaoScroll.js";
 const scrollAnima = new ScrollAnimation("[data-anime='scroll']");
 scrollAnima.init();
 
+import DropDownMenu from "./modules/dropDownMenu.js";
+const dropDownMenu = new DropDownMenu("[data-dropdown]");
+dropDownMenu.init();
+
 import initMenuMobile from "./modules/menuMobile.js";
 initMenuMobile();
 
@@ -50,5 +54,3 @@ import initDataObject from "./modules/dataObject.js";
 initDataObject();
 /* import initScrollImg from "./modules/scrollimg.js";
 initScrollImg(); */
-/* import outsideClick from "./module/outsideClick.js";
-outsideClick(); */
