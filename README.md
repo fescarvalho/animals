@@ -27,7 +27,7 @@ Project built during the JavaScript course of the teaching institution Origamid,
   - Deploy on Heroku: https://app.netlify.com/sites/animalsf/overview
   - Repository: https://github.com/fescarvalho/animals
     - In case of sensitive bugs like security vulnerabilities, please contact
-      Lucassiqueiraferandes07@gmail.com directly instead of using issue tracker. We value your effort
+     fernando_scarvalho@hotmail.com directly instead of using issue tracker. We value your effort
       to improve the security and privacy of this project!
 
   ## Versioning
