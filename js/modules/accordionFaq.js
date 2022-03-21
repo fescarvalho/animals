@@ -23,6 +23,7 @@ export default class AccordionFaq {
       this.toggleAccordion(this.accordionList[0]);
       this.accordionEvent();
     }
+    return this;
   }
 }
 console.log("ola mundo");
