@@ -1,17 +1,28 @@
-export default function accordionFaq() {
-  const accordionList = document.querySelectorAll("[data-menu='accordion'] dt");
-  const activeClass = "ativo";
-  accordionList[0].classList.add(activeClass);
-  accordionList[0].nextElementSibling.classList.add(activeClass);
-
-  function ativarAccordion() {
-    this.classList.toggle(activeClass);
-    this.nextElementSibling.classList.toggle(activeClass);
+export default class AccordionFaq {
+  constructor(list) {
+    this.accordionList = document.querySelectorAll(list);
+    this.activeClass = "ativo";
   }
-  if (accordionList.length) {
-    accordionList.forEach((item) => {
-      item.addEventListener("click", ativarAccordion);
+
+  toggleAccordion(item) {
+    item.classList.toggle(this.activeClass);
+    item.nextElementSibling.classList.toggle(this.activeClass);
+  }
+
+  //adciona os eventos ao accordion
+  accordionEvent() {
+    this.accordionList.forEach((item) => {
+      item.addEventListener("click", () => this.toggleAccordion(item));
     });
+  }
+
+  //iniciar funcao
+  init() {
+    if (this.accordionList.length) {
+      //ativar primeiro item
+      this.toggleAccordion(this.accordionList[0]);
+      this.accordionEvent();
+    }
   }
 }
 console.log("ola mundo");

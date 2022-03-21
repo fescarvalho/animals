@@ -2,10 +2,12 @@ import ScrollSmooth from "./modules/scrollSuave.js";
 const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]');
 scrollSmooth.init();
 
+import AccordionFaq from "./modules/accordionFaq.js";
+const accordion = new AccordionFaq('[data-menu="accordion"] dt');
+accordion.init();
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
-import accordionFaq from "./modules/accordionFaq.js";
-accordionFaq();
 import modalLogin from "./modules/modalLogin.js";
 modalLogin();
 import initToolTip from "./modules/toolTip.js";
