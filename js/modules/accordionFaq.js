@@ -26,4 +26,3 @@ export default class AccordionFaq {
     return this;
   }
 }
-console.log("ola mundo");

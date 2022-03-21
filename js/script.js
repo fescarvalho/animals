@@ -21,10 +21,12 @@ const modal = new Modal(
 );
 modal.init();
 
+import ToolTip from "./modules/toolTip.js";
+const toolTip = new ToolTip("[data-tooltip]");
+toolTip.init();
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
-import initToolTip from "./modules/toolTip.js";
-initToolTip();
 import initMenuMobile from "./modules/menuMobile.js";
 initMenuMobile();
 
