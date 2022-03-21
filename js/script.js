@@ -1,5 +1,7 @@
-import scrollSmooth from "./modules/scrollSuave.js";
-scrollSmooth();
+import ScrollSmooth from "./modules/scrollSuave.js";
+const scrollSmooth = new ScrollSmooth('[data-menu="suave"] a[href^="#"]');
+scrollSmooth.init();
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
 import initNavTab from "./modules/navTab.js";
