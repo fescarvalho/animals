@@ -54,7 +54,8 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-import initDataObject from "./modules/dataObject.js";
-initDataObject();
+import Funcionamento from "./modules/horarioFuncionamento.js";
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
+funcionamento.init();
 /* import initScrollImg from "./modules/scrollimg.js";
 initScrollImg(); */
