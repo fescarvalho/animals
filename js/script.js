@@ -13,10 +13,16 @@ const tabnav = new Tabnav(
 );
 tabnav.init();
 
+import Modal from "./modules/modalLogin.js";
+const modal = new Modal(
+  "[data-modal='abrir']",
+  "[data-modal='fechar']",
+  "[data-modal='modal']"
+);
+modal.init();
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
-import modalLogin from "./modules/modalLogin.js";
-modalLogin();
 import initToolTip from "./modules/toolTip.js";
 initToolTip();
 import initMenuMobile from "./modules/menuMobile.js";
