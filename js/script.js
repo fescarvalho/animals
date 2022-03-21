@@ -38,8 +38,10 @@ fetchAnimais("../animaisapi.json", ".numeros-grid");
 import fetchBitcoin from "./modules/fetchBitcoin.js";
 fetchBitcoin("https://blockchain.info/ticker", ".bitcoin");
 
-import scrollAnimation from "./modules/animacaoScroll.js";
-scrollAnimation();
+import ScrollAnimation from "./modules/animacaoScroll.js";
+const scrollAnima = new ScrollAnimation("[data-anime='scroll']");
+scrollAnima.init();
+
 import initMenuMobile from "./modules/menuMobile.js";
 initMenuMobile();
 
