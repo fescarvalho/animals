@@ -6,6 +6,13 @@ import AccordionFaq from "./modules/accordionFaq.js";
 const accordion = new AccordionFaq('[data-menu="accordion"] dt');
 accordion.init();
 
+import Tabnav from "./modules/navTab.js";
+const tabnav = new Tabnav(
+  '[data-tab="menu"] li',
+  '[data-tab="content"] section'
+);
+tabnav.init();
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
 import modalLogin from "./modules/modalLogin.js";
@@ -21,8 +28,6 @@ import initAnimaisFetch from "./modules/animais-fetch.js";
 initAnimaisFetch();
 import initFetchBitcoin from "./modules/fetchBitcoin.js";
 initFetchBitcoin();
-import initNavTab from "./modules/navTab.js";
-initNavTab();
 /* import initScrollImg from "./modules/scrollimg.js";
 initScrollImg(); */
 /* import outsideClick from "./module/outsideClick.js";
