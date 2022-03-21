@@ -47,8 +47,12 @@ import DropDownMenu from "./modules/dropDownMenu.js";
 const dropDownMenu = new DropDownMenu("[data-dropdown]");
 dropDownMenu.init();
 
-import initMenuMobile from "./modules/menuMobile.js";
-initMenuMobile();
+import MenuMobile from "./modules/menuMobile.js";
+const menuMobile = new MenuMobile(
+  '[data-menu="mobile"]',
+  '[data-menu="lista"]'
+);
+menuMobile.init();
 
 import initDataObject from "./modules/dataObject.js";
 initDataObject();
