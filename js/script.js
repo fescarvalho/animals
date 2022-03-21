@@ -25,6 +25,9 @@ import ToolTip from "./modules/toolTip.js";
 const toolTip = new ToolTip("[data-tooltip]");
 toolTip.init();
 
+import fetchAnimais from "./modules/animais-fetch.js";
+fetchAnimais("../animaisapi.json", ".numeros-grid");
+
 import scrollAnimation from "./modules/animacaoScroll.js";
 scrollAnimation();
 import initMenuMobile from "./modules/menuMobile.js";
@@ -32,8 +35,6 @@ initMenuMobile();
 
 import initDataObject from "./modules/dataObject.js";
 initDataObject();
-import initAnimaisFetch from "./modules/animais-fetch.js";
-initAnimaisFetch();
 import initFetchBitcoin from "./modules/fetchBitcoin.js";
 initFetchBitcoin();
 /* import initScrollImg from "./modules/scrollimg.js";
