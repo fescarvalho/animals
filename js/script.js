@@ -38,6 +38,7 @@ fetchAnimais("../animaisapi.json", ".numeros-grid");
 import fetchBitcoin from "./modules/fetchBitcoin.js";
 fetchBitcoin("https://blockchain.info/ticker", ".bitcoin");
 
+/* SCROLL ANIMATION */
 import ScrollAnimation from "./modules/animacaoScroll.js";
 const scrollAnima = new ScrollAnimation("[data-anime='scroll']");
 scrollAnima.init();
