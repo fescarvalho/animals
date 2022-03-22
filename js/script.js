@@ -59,3 +59,9 @@ const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
 /* import initScrollImg from "./modules/scrollimg.js";
 initScrollImg(); */
+
+import SlideNav from "./modules/js/slide.js";
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+
+slide.addControlEvent(".custom-controls");
