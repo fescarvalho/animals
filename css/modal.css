@@ -85,9 +85,10 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .modal {
     width: 50px;
     padding: 20px;
   }
 }
+ */
