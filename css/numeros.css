@@ -1,3 +1,8 @@
+.numeros {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .numeros-grid {
   grid-column: 2/4;
   display: grid;
