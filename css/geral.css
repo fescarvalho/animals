@@ -152,14 +152,20 @@ body {
 }
 
 [data-menu="accordion"] dt::after {
-  content: "⮯";
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../img/arrow-red.svg") no-repeat center center;
   margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
 }
 [data-menu="accordion"] dt.ativo::after {
-  content: "⮭";
+  transform: rotate(-90deg);
 }
 
-[data-menu="accordion"] dd {
+.js [data-menu="accordion"] dd {
   display: none;
 }
 [data-menu="accordion"] dd.ativo {
@@ -286,6 +292,13 @@ body {
     opacity: 1;
     max-height: 200px;
   }
+}
+
+.arrow-black {
+  background: url("../img/arrow-black.svg") no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
 
 @media (max-width: 700px) {

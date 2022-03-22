@@ -7,16 +7,18 @@ export default class MenuMobile {
     // de events caso o usuário não define
     if (events === undefined) this.events = ["touchstart", "click"];
     else this.events = events;
+    this.activeClass = "active";
 
     this.openMenu = this.openMenu.bind(this);
   }
 
-  openMenu() {
-    this.menuList.classList.toggle("active");
-    this.menuButton.classList.toggle("active");
+  openMenu(event) {
+    event.preventDefault();
+    this.menuList.classList.toggle(this.activeClass);
+    this.menuButton.classList.toggle(this.activeClass);
     outsideClick(this.menuList, this.events, () => {
-      this.menuList.classList.remove("active");
-      this.menuButton.classList.remove("active");
+      this.menuList.classList.remove(this.activeClass);
+      this.menuButton.classList.remove(this.activeClass);
     });
   }
 
