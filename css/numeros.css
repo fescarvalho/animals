@@ -1,3 +1,6 @@
+.numeros {
+  margin: 10rem 0;
+}
 .numeros-grid {
   grid-column: 2/4;
   display: grid;
@@ -21,5 +24,8 @@
 @media (max-width: 700px) {
   .numeros-grid {
     grid-column: 1;
+  }
+  .numeros {
+    margin: 3rem 0;
   }
 }
